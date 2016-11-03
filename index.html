@@ -4,6 +4,7 @@
     <title>Worthington Pantry App</title>
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap-theme.css">
+     <link rel="stylesheet" type="text/css" href="custom.css">
   </head>
   <body>
       <div class="container">
@@ -17,27 +18,171 @@
                 <h1>Input</h1>
                 <div class="row">
                     <div class="col-md-4">
-                        <h1>input 1</h1>
+                        <label>Vegetarian: </label>
+                    </div>
+                    <div class="col-md-8">
+                        <label class="radio-inline">
+                          <input type="radio" id="radioYes">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" id="radioNo">No
+                        </label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <h1>input 2</h1>
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">0-1 years</span>
+                          <input type="text" placeholder="0"  class="form-control" id="0to1">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <h1>input 3</h1>
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">2-3 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="2to3">
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">4-6 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="4to6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">7-9 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="7to9">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">10-13 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="10to13">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">14-17 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="14to17">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">18-60 years</span>
+                          <input type="text" placeholder="0" class="form-control" id="18to60">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">61+ years</span>
+                          <input type="text" placeholder="0" class="form-control" id="61Plus">
+                        </div>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="row">
+                    <button type="button" class="btn btn-default" onclick="doneClicked()"> Done </button>
+                </div>
+            </div>
+
+            <!-- For Choices -->
+            <div class="col-md-6">
+                <h1>Choices</h1>
+                <div class="row"> </div>
+                <div class="row"> </div>
+                </br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Beans</span>
+                          <input type="text" value="0" class="form-control disabled" disabled="Yes" id="BeanValue">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Frozen Meats</span>
+                          <input type="text" value="0" class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Canned Vegetables</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Combinations</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Dairy</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Eggs, PB, Canned Meat</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Canned Fruit</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">Fresh Fruit</span>
+                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
 
 
 
-
+<!-- 
     <link  type="text/js" href="res/js/bootstrap.min.js">
-    <link  type="text/js" href="res/js/npm.js">
+    <link  type="text/js" href="res/js/npm.js"> -->
+      <script src="res/js/npm.js"> </script>
+      <script src="res/js/bootstrap.min.js"></script>
+      <script src="custom.js"> </script>
   </body>
 </html>
