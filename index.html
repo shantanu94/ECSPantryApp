@@ -5,183 +5,240 @@
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap-theme.css">
      <link rel="stylesheet" type="text/css" href="custom.css">
+     <meta charset="UTF-8">
   </head>
   <body>
-      <div class="container">
-          <div class="row text-center">
-              <div class="col-md-12">
-                  <h1>Worthington Food Pantry App</h1>
+    <div class="container">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Link</a></li>
+          </div>
+      </nav>
+      <div class="spacing"/>
+      <div class="row text-center">
+          <div class="col-md-12">
+              <h1>Worthington Food Pantry App</h1>
+          </div>
+      </div>
+      <div class="row text-center">
+          <div class="col-md-4">
+              <h1>Input</h1>
+              <div class="row">
+                  <div class="col-md-4">
+                      <label>Vegetarian: </label>
+                  </div>
+                  <div class="col-md-8">
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio" id="radioYes">Yes
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio" id="radioNo">No
+                      </label>
+                  </div>
               </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <h1>Input</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Vegetarian: </label>
-                    </div>
-                    <div class="col-md-8">
-                        <label class="radio-inline">
-                          <input type="radio" id="radioYes">Yes
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" id="radioNo">No
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">0-1 years</span>
-                          <input type="text" placeholder="0"  class="form-control" id="0to1">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">2-3 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="2to3">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">4-6 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="4to6">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">7-9 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="7to9">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">10-13 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="10to13">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">14-17 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="14to17">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">18-60 years</span>
-                          <input type="text" placeholder="0" class="form-control" id="18to60">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">61+ years</span>
-                          <input type="text" placeholder="0" class="form-control" id="61Plus">
-                        </div>
-                    </div>
-                </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">0-1 years</span>
+                        <input type="text" placeholder="0"  class="form-control" id="0to1">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">2-3 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="2to3">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">4-6 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="4to6">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">7-9 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="7to9">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">10-13 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="10to13">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">14-17 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="14to17">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">18-60 years</span>
+                        <input type="text" placeholder="0" class="form-control" id="18to60">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">61+ years</span>
+                        <input type="text" placeholder="0" class="form-control" id="61Plus">
+                      </div>
+                  </div>
+              </div>
 
-                </br></br>
+              </br></br>
 
-                <div class="row">
-                    <button type="button" class="btn btn-default" onclick="doneClicked()"> Done </button>
-                </div>
-            </div>
+              <div class="row">
+                  <button type="button" class="btn btn-default" onclick="doneClicked()"> Done </button>
+              </div>
+          </div>
 
-            <!-- For Choices -->
-            <div class="col-md-6">
-                <h1>Choices</h1>
-                <div class="row"> </div>
-                <div class="row"> </div>
-                </br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Beans</span>
-                          <input type="text" value="0" class="form-control disabled" disabled="Yes" id="BeanValue">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Frozen Meats</span>
-                          <input type="text" value="0" class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Canned Vegetables</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Combinations</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Dairy</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Eggs, PB, Canned Meat</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Canned Fruit</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-addon">Fresh Fruit</span>
-                          <input type="text" value="0"  class="form-control disabled" disabled="Yes">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
+          <!-- For Choices -->
+          <div class="col-md-6">
+              <h1>Choices</h1>
+              <div class="row"> </div>
+              <div class="row"> </div>
+              </br>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Beans</span>
+                        <input type="text" value="0" class="form-control disabled" disabled="Yes" id="BeanValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Frozen Meats</span>
+                        <input type="text" value="0" class="form-control disabled" disabled="Yes" id="FrozenMeatsValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Canned Vegetables</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="CannedVegetablesValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Combinations</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="CombinationsValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Dairy</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="DairyValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Eggs, PB, Canned Meat</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="EgsPbMeatValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Canned Fruit</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="CannedFruitValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Fresh Fruit</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="FreshFruitValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Pasta/Rice</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="PastaRiceValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Cereal</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="CerealValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Miscellaneous</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="MiscValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Personals</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="PersonalsValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Bread</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="BreadValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">FreshVegetables</span>
+                        <input type="text" value="0"  class="form-control disabled" disabled="Yes" id="FreshVegetablesValue">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
+
 
 
 
 <!-- 
     <link  type="text/js" href="res/js/bootstrap.min.js">
     <link  type="text/js" href="res/js/npm.js"> -->
-      <script src="res/js/npm.js"> </script>
+    <script src="res/js/jquery-3.1.1.min.js"></script>
       <script src="res/js/bootstrap.min.js"></script>
       <script src="custom.js"> </script>
   </body>
