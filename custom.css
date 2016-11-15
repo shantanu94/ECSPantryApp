@@ -11,3 +11,7 @@
 .row {
 	margin-bottom: 5px;
 }
+
+.header {
+	background: #000000 !important;	
+}
