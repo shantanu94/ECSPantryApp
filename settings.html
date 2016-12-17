@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <html>
   <head>
     <title>Worthington Pantry App Settings</title>
@@ -20,13 +20,14 @@
           <div class="row text-center">
               <h1>Worthington Food Pantry App Settings</h1>
           </div>
+
           <div class="col-md-6">
               <h3>Limits on Percentage of Food Group Needs Met</h3>
               <div class="row">
                   <div class="col-md-12">
-                    <div class="header">
-                        <span class="input-group-addon">Food Groups</span>
-                        <span class="input-group-addon">Percentage of Need Met</span>
+                    <div class="input-group header">
+                        <span class="input-group-addon" style="font-size: 24px; font-weight: bold">Food Groups</span>
+                        <span class="input-group-addon" style="font-size: 24px; font-weight: bold">Percent Needed</span>
                     </div>
                   </div>
               </div>
@@ -34,7 +35,7 @@
                   <div class="col-md-12">
                       <div class="input-group">
                         <span class="input-group-addon">Grains</span>
-                        <input type="text" placeholder="1" value="1" class="form-control" id="GrainsMetValue">
+                        <input type="number" class="form-control" id="GrainsMetValue">
                       </div>
                   </div>
               </div>
@@ -42,7 +43,7 @@
                   <div class="col-md-12">
                       <div class="input-group">
                         <span class="input-group-addon">Fruit</span>
-                        <input type="text" placeholder="1" value="1" class="form-control" id="FruitMetValue">
+                        <input type="number" placeholder="1" value="1" class="form-control" id="FruitMetValue">
                       </div>
                   </div>
               </div>
@@ -50,12 +51,129 @@
                   <div class="col-md-12">
                       <div class="input-group">
                         <span class="input-group-addon">Vegetables</span>
-                        <input type="text" placeholder="1" value="1" class="form-control" id="VegetablesMetValue">
+                        <input type="number" placeholder="1" value="1" class="form-control" id="VegetablesMetValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Dairy</span>
+                        <input type="number" placeholder="1" value="1" class="form-control" id="DairyMetValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Protein</span>
+                        <input type="number" placeholder="1" value="1" class="form-control" id="ProteinMetValue">
+                      </div>
+                  </div>
+              </div>
+              <div class="row text-center">
+                  <button type="button" class="btn btn-default" onclick="updateSettings()"> Done </button>
+              </div>
+          </div>
+
+          <!-- Limit Certain Foods -->
+          <div class="col-md-6">
+              <h3>Limits Certain Foods</h3>
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group header">
+                        <span class="input-group-addon" style="font-size: 24px; font-weight: bold">Categories</span>
+                        <span class="input-group-addon" style="font-size: 24px; font-weight: bold">Choice Limit
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Beans</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">CannedVegetables</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Dairy</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Misc. (Protein)</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Canned Fruit</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Fresh Fruit</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Pasta/Rice</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Cereal</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Bread</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="input-group">
+                        <span class="input-group-addon">Fresh Vegetables</span>
+                        <input type="number" placeholder="No Limit" class="form-control">
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-  </body>
 
-</html>
+      </div>
+
+      <script src="res/js/jquery-3.1.1.min.js"></script>
+      <script src="res/js/bootstrap.min.js"></script>
+      <script src="custom.js"> </script>
+  </body>
+</html> -->

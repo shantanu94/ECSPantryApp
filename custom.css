@@ -1,10 +1,12 @@
 .input-group-addon {
     min-width:200px;
     text-align:left;
-    background: #E0E0E0 !important;
+    font-size: 16px;
+    background: #E0E0E0;
 }
 
 .form-control {
+	font-size: 16px;
 	background: #FFFFFF !important;
 }
 
@@ -13,5 +15,30 @@
 }
 
 .header {
-	background: #000000 !important;	
+	font-size: 32px;
 }
+
+.footer {
+	padding-top: 20px;
+}
+
+.btnDone {
+	font-size: 24px;
+}
+
+h3 {
+	text-align: center;
+}
+
+body {
+	padding-top: 70px;
+}
+
+.nav {
+	font-size: 24px;
+}
+
+
+/*.scarlet {
+	background-color: #EF9A9A !important;
+}*/

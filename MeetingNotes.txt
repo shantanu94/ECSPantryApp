@@ -1,0 +1,12 @@
+Add note: 1 = 100%
+			.5 = 50%
+
+Add surplus section
+
+Change done to calculate
+Add clear - bottom right
+Add family size label
+
+Title = Choice Calculator
+
+Add colors to foods
