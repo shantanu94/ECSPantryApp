@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Worthington Pantry App</title>
+    <title>Choice Calcukator</title>
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="res/css/bootstrap-theme.css">
      <link rel="stylesheet" type="text/css" href="custom.css">
@@ -36,198 +36,207 @@
                       </label>
                   </div>
               </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">0-1 years</span>
-                        <input type="number" placeholder="0"  class="form-control" id="0to1">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">2-3 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="2to3">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">4-6 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="4to6">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">7-9 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="7to9">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">10-13 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="10to13">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">14-17 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="14to17">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">18-60 years</span>
-                        <input type="number" placeholder="0" class="form-control" id="18to60">
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">61+ years</span>
-                        <input type="number" placeholder="0" class="form-control" id="61Plus">
-                      </div>
-                  </div>
-              </div>
+              <form id="form1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">0-1 years</span>
+                          <input type="number" placeholder="0"  class="form-control" id="0to1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">2-3 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="2to3">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">4-6 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="4to6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">7-9 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="7to9">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">10-13 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="10to13">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">14-17 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="14to17">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">18-60 years</span>
+                          <input type="number" placeholder="0" class="form-control" id="18to60">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon">61+ years</span>
+                          <input type="number" placeholder="0" class="form-control" id="61Plus">
+                        </div>
+                    </div>
+                </div>
+              </form>
 
               <div class="row">
-                  <button type="button" class="btn btn-default btnDone" onclick="doneClicked()"> Done </button>
+                  <button type="button" class="btn btn-default btnDone" onclick="doneClicked()"> Calculate </button>
               </div>
           </div>
 
           <!-- For Choices -->
-          <div class="col-md-8">
+          <div class="col-md-7">
               <h1>Choices</h1>
-              <div class="row"> </div>
-              <div class="row"> </div>
-              </br>
-          </div>
-          <div class="col-md-4">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon scarlet">Beans</span>
-                        <input type="number" value="0" class="form-control"  id="BeansValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Frozen Meats</span>
-                        <input type="text" value="VARIES" class="form-control" id="FrozenMeatsValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Canned Vegetables</span>
-                        <input type="number" value="0"  class="form-control " id="CannedVegetablesValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Combinations</span>
-                        <input type="number" value="0"  class="form-control " id="CombinationsValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Dairy</span>
-                        <input type="number" value="0"  class="form-control " id="DairyValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Eggs, PB, Canned Meat</span>
-                        <input type="number" value="0"  class="form-control " id="MiscProteinValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Canned Fruit</span>
-                        <input type="number" value="0"  class="form-control " id="CannedFruitValue" readonly>
-                      </div>
-                  </div>
+              <div class="row" style="text-align: right">
+                <span>Family Size: <span style="font-size: 16px;" id="familySizeLabel">0</span></span>
               </div>
           </div>
-          <div class="col-md-4">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Fresh Fruit</span>
-                        <input type="number" value="0"  class="form-control " id="FreshFruitValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Pasta/Rice</span>
-                        <input type="number" value="0"  class="form-control " id="PastaRiceValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Cereal</span>
-                        <input type="number" value="0"  class="form-control " id="CerealValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Miscellaneous</span>
-                        <input type="number" value="0"  class="form-control " id="MiscValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Personals</span>
-                        <input type="number" value="0"  class="form-control " id="PersonalsValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">Bread</span>
-                        <input type="number" value="0"  class="form-control " id="BreadValue" readonly>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="input-group">
-                        <span class="input-group-addon">FreshVegetables</span>
-                        <input type="number" value="0"  class="form-control " id="FreshVegetablesValue" readonly>
-                      </div>
-                  </div>
-              </div>
+          <form id="form2">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #AED581;">Beans</span>
+                          <input type="number" value="0" class="form-control"  id="BeansValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #CE93D8">Frozen Meats</span>
+                          <input type="text" value="VARIES" class="form-control" id="FrozenMeatsValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #AED581;">Canned Vegetables</span>
+                          <input type="number" value="0"  class="form-control " id="CannedVegetablesValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #A1887F;">Combinations</span>
+                          <input type="number" value="0"  class="form-control " id="CombinationsValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #2196F3">Dairy</span>
+                          <input type="number" value="0"  class="form-control " id="DairyValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #CE93D8">Eggs, PB, Canned Meat</span>
+                          <input type="number" value="0"  class="form-control " id="MiscProteinValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #E57373">Canned Fruit</span>
+                          <input type="number" value="0"  class="form-control " id="CannedFruitValue" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </form>
+          <form id="form3">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #E57373">Fresh Fruit</span>
+                          <input type="number" value="0"  class="form-control " id="FreshFruitValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #FFB74D">Pasta/Rice</span>
+                          <input type="number" value="0"  class="form-control " id="PastaRiceValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #FFB74D">Cereal</span>
+                          <input type="number" value="0"  class="form-control " id="CerealValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #FFEE58;">Miscellaneous</span>
+                          <input type="number" value="0"  class="form-control " id="MiscValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #84FFFF">Personals</span>
+                          <input type="number" value="0"  class="form-control " id="PersonalsValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #FFB74D">Bread</span>
+                          <input type="number" value="0"  class="form-control " id="BreadValue" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon" style="background-color: #AED581;">FreshVegetables</span>
+                          <input type="number" value="0"  class="form-control " id="FreshVegetablesValue" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </form>
+          <div class="row" style="text-align: right; padding-right: 30px;">
+              <button type="button" id="clearBtn" class="btn btn-default btnDone"> Clear </button>
           </div>
       </div>
 
@@ -313,6 +322,10 @@
                         <input type="number" placeholder="1" value="1" class="form-control" id="ProteinMetValue">
                       </div>
                   </div>
+              </div>
+              <div class="row" >
+                <h3>Note: 1 = 100%.</h3>
+                <h3>0.5 = 50%</h3>
               </div>
           </div>
 

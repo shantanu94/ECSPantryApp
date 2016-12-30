@@ -22,6 +22,8 @@ function doneClicked() {
 
 		updateSettings();
 
+		document.querySelector("#familySizeLabel").innerHTML = familySize;
+
 		grainsNeed = ((+twoToThree * 5) + (+fourToSix * 5) + (+sevenToNine * 6) + (+tenToThirteen * 6) +
 							(+fourteenToSeventeen * 8) + (+eighteenToSixty * 6) + (+sixtyOnePlus * 7)) * 3
 							* grainsMet;
@@ -222,5 +224,13 @@ $(document).ready(function(){
 
 	$("#hideBtn").click(function() {
 		$("#settings").hide();
-	})
+	});
+
+	$("#clearBtn").click(function() {
+		document.getElementById("form1").reset();
+		document.getElementById("form2").reset();
+		document.getElementById("form3").reset();
+		document.querySelector("#familySizeLabel").innerHTML = 0;
+	});
+
 });
